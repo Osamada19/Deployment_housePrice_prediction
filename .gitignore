@@ -1,0 +1,7 @@
+venv/
+
+simplify.txt
+
+# app/__pycache__
+
+**/__pycache__/
