@@ -26,7 +26,7 @@ if st.button('predict') :
 
     inputs={'features' :features_values} 
 
-    response= requests.post('http://localhost:8000/predict',
+    response= requests.post('deploymenthousepriceprediction.streamlit.app',
                             json=inputs 
     )
 
@@ -36,6 +36,7 @@ if st.button('predict') :
     else:
         st.error("Prediction failed")
     st.write(response.json())
+
 
 
 
