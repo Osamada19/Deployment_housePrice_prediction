@@ -26,7 +26,7 @@ if st.button('predict') :
 
     inputs={'features' :features_values} 
 
-    response= requests.post('deploymenthousepriceprediction.streamlit.app',
+    response= requests.post('deploymenthousepriceprediction.streamlit',
                             json=inputs 
     )
 
@@ -41,3 +41,4 @@ if st.button('predict') :
 
 
     # st.success(f"Prediction: {response.json()['prediction']}")
+
